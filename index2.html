@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>MarvinJ - Javascript Image Processing Framework</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109677410-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109677410-1');
+</script>
+<!-- Github. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- END - Github. -->
+
+
+
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/hlformat.css">
+<link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="topbar">
+	<div class="forkme">
+		<a href="https://github.com/gabrielarchanjo/marvinj" target="_blank"><img src="../images/fork_me_github.png" style="pointer-events:all;"></img></a>
+	</div>
+	<div class="topContainer">
+		<div style="display:inline-block">
+			<img class="imgLogo" src="../images/marvinj_logo.png"></img>
+		</div>
+		<div style="display:inline-block; vertical-align:top; margin: 20px 0px 0px 50px;">
+			<!-- Github Watch -->
+			<a class="github-button" href="https://github.com/gabrielarchanjo/marvinj/subscription" data-size="large" data-show-count="true" aria-label="Watch gabrielarchanjo/marvinj on GitHub">Watch</a>
+			<!-- Gitub - Star -->
+			<a class="github-button" href="https://github.com/gabrielarchanjo/marvinj" data-size="large" data-show-count="true" aria-label="Star gabrielarchanjo/marvinj on GitHub">Star</a>
+			<!-- Github - Fork -->
+			<a class="github-button" href="https://github.com/gabrielarchanjo/marvinj/fork" data-size="large" data-show-count="true" aria-label="Fork gabrielarchanjo/marvinj on GitHub">Fork</a>
+		</div>
+	</div>
+	
+	<div class="topBarMenuContainer">
+		<div class="topMenu">
+			<div class="topBarItemSelected"><a href="#">Home</a></div>
+			<div class="topBarItem"><a href="download.html">Download</a></div>
+			<div class="topBarItem"><a href="algorithms.html">Algorithms</a></div>
+			<div class="topBarItem"><a href="tutorials.html">Tutorials</a></div>
+			<div class="topBarItem"><a href="examples.html">Examples</a></div>
+			<div class="topBarItem"><a href="askExpert.html">Ask an Expert</a></div>
+			<div class="topBarItem"><a href="https://groups.google.com/forum/#!forum/marvin-project" target="_blank">Discussion</a></div>
+			<div class="topBarItem"><a href="http://marvinproject.sourceforge.net" target="_blank">Marvin</a></div>
+		</div>
+	</div>
+</div>
+
+<div class="mainContent">
+	
+	<p style="margin-top:0px;">
+	MarvinJ is a pure javascript image processing framework derived from Marvin Framework. This front page gives you a glimpse 
+	of how easy and powerful is MarvinJ for many different image processing applications. Check the page source 
+	<a href="../script/index.js" target="_blank">here</a>
+	</p>
+	
+	<h2>Color Channel Example</h2>
+	<img src="../images/example1.jpg"></img>
+	<div class="photoCredit">ORIGINAL PHOTO BY: <a href="http://www.fredbandeira.com/">Fred Bandeira</a></div>
+	
+	<br/><b>Source:</b>
+	<script async src="//jsfiddle.net/leirbag_arc/cfuoban7/embed/"></script>
+
+<!--
+<div class="runFiddle">
+<i class="fa fa-play" aria-hidden="true"></i>Run on JSFiddle
+</div>
+-->
+
+<h2>Filters Example</h2>
+
+Marvin provides many algorithms to manipulate color and appearance. You can check all algorithms already ported to MarvinJ <a href="algorithms.html">here</a>. New
+algorithms will be added in further releases. Example <a href="../script/index.js" target="_blank">source code</a>.
+
+<div class="divFlex divExperiment" style="width:825px; margin-left:auto; margin-right:auto;">
+	<div class="floatLeft">
+		<canvas width="640" height="400" id="canvasExampleFilters"></canvas>
+	</div>
+	<div class="floatLeft">
+		
+		<div class="buttonFilter" onclick="clickExampleFiltersGrayScale()">GrayScale</div>
+		<div class="buttonFilter" onclick="clickExampleFiltersBlackAndWhite()">Black and White</div>
+		<div class="buttonFilter" onclick="clickExampleFiltersSepia()">Sepia</div>
+		<div class="buttonFilter" onclick="clickExampleFiltersEmboss()">Emboss</div>
+		<div class="buttonFilter" onclick="clickExampleFiltersHalftone()">Halftone</div>
+		<div class="buttonFilter" onclick="clickExampleFiltersInvertColors()">Invert</div>
+		<div class="buttonFilter" onclick="clickExampleFiltersEdge()">Edge Detection</div>
+		<div class="buttonFilter" onclick="clickExampleFiltersEdge2()">Edge Detection 2</div>
+		<div class="buttonFilter" onclick="clickExampleFiltersCrop()">Crop</div>
+		<div class="buttonFilter" onclick="clickExampleFiltersInvertScale()">Scale</div>
+		<div class="buttonFilter" onclick="clickExampleFiltersReset()">Reset</div>
+	</div>
+</div>
+
+<h2>Detect Features</h2>
+
+The ability to work with basic image features like edges, corners and shapes are fundamental to image processing. The example below detect and analyze 
+the corners of objects in order to determine the position of the main object in the scene. Having these points, it's possible to crop the object
+automatically. Example <a href="../script/index.js" target="_blank">source code</a>
+
+<div class="divFlex divExperiment" style="width:1188; margin-left:auto; margin-right:auto;">
+	<div class="floatLeft">
+		<canvas width="1000" height="570" id="canvasAutoCrop"></canvas>
+	</div>
+	<div class="floatLeft">
+		<div class="buttonFilter" onclick="clickDetectCorners()">1. Detect Corners</div>
+		<div class="buttonFilter" onclick="clickSelectCropArea()">2. Select Crop Area</div>
+		<div class="buttonFilter" onclick="clickAutoCropCrop()">3. Crop</div>
+		<div class="buttonFilter" onclick="clickAutoCropReset()">Reset</div>
+	</div>
+
+</div>
+
+<h2>Fractal Rendering</h2>
+
+MarvinJ also provides methods to render fractals. In the example below, fractals are generated using Iterated Function System. A nice resource about this
+subject is <a href="http://paulbourke.net/fractals/ifs/" target="_blank">Paul Bourke website</a> and papers. Check out this page <a href="../script/index.js" target="_blank">source code</a>.
+
+<div class="divFlex divExperiment" style="width:1188; margin-left:auto; margin-right:auto;">
+	<div class="floatLeft">
+		<canvas width="1000" height="570" id="canvasFractals"></canvas>
+	</div>
+	<div class="floatLeft">
+		<div class="buttonFilter" onclick="clickFractalDragon()">Dragon</div>
+		<div class="buttonFilter" onclick="clickFractalTree()">Tree</div>
+		<div class="buttonFilter" onclick="clickFractalBarnsleyLeaf()">Barnsley Leaf</div>
+		<div class="buttonFilter" onclick="clickFractalMappleLeaf()">Mapple Leaf</div>
+	</div>
+
+</div>
+
+<script src="../releases/marvinj-0.9.js"></script>
+<script src="../script/fractal_formulas.js"></script>
+<script src="../script/index.js"></script>
+
+<br/><br/><br/>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bb66fcdd6923e7e"></script>
+</body>
+<html>
