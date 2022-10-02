@@ -2,6 +2,20 @@
 <html>
 <head>
     <script type="text/javascript">
+        function launchIntoFullscreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if(element.msRequestFullscreen) {
+    element.msRequestFullscreen();
+  }
+}
+
+// Launch fullscreen for browsers that support it!
+launchIntoFullscreen(document.documentElement); // the whole page
     </script>
     <style>
         body{
