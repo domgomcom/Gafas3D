@@ -22,9 +22,9 @@
 
     let TestSize=100;
     function Resize(){
-    document.getElementById("body").setst
     document.body.style.backgroundSize = TestSize + '%';
-    TestSize -= 5;
+    
+    TestSize -= 1;
     }
 
     document.onmousedown = FullScreen;
@@ -39,6 +39,7 @@
             background-attachment: fixed;
             background-position: center;
             height:500px;
+            background-color: black;
         }
     </style>
 </head>
