@@ -2,7 +2,7 @@
 <html>
 <head>
     <script type="text/javascript">
-        document.body.addEventListener("click", FullScreen);
+        //document.body.addEventListener("click", FullScreen);
     function launchIntoFullscreen(element) {
         if(element.requestFullscreen) {
             element.requestFullscreen();
@@ -19,6 +19,7 @@
     function FullScreen(){
     launchIntoFullscreen(document.documentElement); // the whole page
     }
+    document.onmousedown = FullScreen;
     </script>
     <style>
         body{
@@ -33,7 +34,7 @@
     </style>
 </head>
 
-<body onclick="FullScreen()">
+<body>
     <script type="text/javascript">
     </script>
 </body>
