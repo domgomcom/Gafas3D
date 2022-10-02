@@ -19,7 +19,16 @@
     function FullScreen(){
     launchIntoFullscreen(document.documentElement); // the whole page
     }
+
+    let TestSize=100;
+    function Resize(){
+    document.getElementById("body").setst
+    document.body.style.height = TestSize + '%';.
+    TestSize -= 5;
+    }
+
     document.onmousedown = FullScreen;
+    document.onmousemove = Resize;
     </script>
     <style>
         body{
@@ -34,7 +43,7 @@
     </style>
 </head>
 
-<body>
+<body id="body">
     <script type="text/javascript">
     </script>
 </body>
