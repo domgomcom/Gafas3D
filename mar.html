@@ -74,11 +74,27 @@
 
 
     <script type="text/javascript">
-        
-        var target = document.getElementById("my-image");
-        document.getElementById("body").style.backgroundImage=target;
 
-        document.body.style.background = "url(" + Caman.toDataURL() + ")";
+
+    <canvas width="300" height="300" id="clouds"></canvas>
+    var canvas = document.getElementById("clouds");
+var ctx = canvas.getContext("2d");
+
+ctx.rotate(Math.random() * 2 * Math.PI);
+ctx.fillStyle = "rgb(200,0,0)";
+ctx.fillRect (10, 10, 55, 50);
+
+ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+ctx.fillRect (30, 30, 55, 50);    
+
+
+
+
+
+  //      var target = document.getElementById("my-image");
+//        document.getElementById("body").style.backgroundImage=target;
+
+        document.body.style.background = "url(" + canvas.toDataURL() + ")";
     </script>
 </body>
 
