@@ -71,13 +71,13 @@
 <body id="body">
 
 <img id="my-image" src="images/salpicadura.jpg" style="display:legacy"></img>
-
+<canvas width="300" height="300" id="clouds"></canvas>
+    
 
     <script type="text/javascript">
 
 
-    <canvas width="300" height="300" id="clouds"></canvas>
-    var canvas = document.getElementById("clouds");
+var canvas = document.getElementById("clouds");
 var ctx = canvas.getContext("2d");
 
 ctx.rotate(Math.random() * 2 * Math.PI);
